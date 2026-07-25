@@ -50,6 +50,94 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24px" height="24px">
+            <use href="./images/icons.svg#burger-icon"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="menu-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-items">
+              <li class="menu-item">Studio</li>
+              <li class="menu-item">Portfolio</li>
+              <li class="menu-item">Contacts</li>
+            </ul>
+          </nav>
+
+          <address class="mobile-menu-contacts">
+            <ul class="menu-contacts-list">
+              <li class="menu-contacts-item">
+                <a class="menu-contact-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="menu-contacts-item">
+                <a class="menu-contact-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="menu-social-list">
+            <li class="menu-social-item">
+              <a
+                class="menu-item-social"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="menu-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-item">
+              <a
+                class="menu-item-social"
+                href="https://www.twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="menu-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-item">
+              <a
+                class="menu-item-social"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="menu-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-item">
+              <a
+                class="menu-item-social"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="menu-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -57,12 +145,14 @@
       <section id="hero" class="section hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
       <section id="features" class="section features">
-        <div class="container">
+        <div class="container feature-container">
           <h2 class="features-title sr-only">Our Features</h2>
           <ul class="features-list">
             <li class="features-item">
@@ -123,10 +213,11 @@
           <ul class="team-list">
             <li class="team-item">
               <img
-                class="team-item-image"
-                src="./images/team-1.jpg"
-                alt="Mark Guerrero"
+                src="images/mark@1x.jpg"
+                srcset="images/mark@1x.jpg 1x, images/mark@2x.jpg 2x"
+                alt="Mark"
                 width="264"
+                class="team-item-image"
               />
               <div class="team-item-overlay">
                 <h3 class="team-item-title">Mark Guerrero</h3>
@@ -186,10 +277,11 @@
             </li>
             <li class="team-item">
               <img
-                class="team-item-image"
-                src="./images/team-2.jpg"
-                alt="Tom Ford"
+                src="images/tom@1.jpg"
+                srcset="images/tom@1x.jpg 1x, images/tom@2x.jpg 2x"
+                alt="Tom"
                 width="264"
+                class="team-item-image"
               />
               <div class="team-item-overlay">
                 <h3 class="team-item-title">Tom Ford</h3>
@@ -248,11 +340,13 @@
             </li>
             <li class="team-item">
               <img
-                class="team-item-image"
-                src="./images/team-3.jpg"
-                alt="Camila Garcia"
+                src="images/camila@1x.jpg"
+                srcset="images/camila@1x.jpg 1x, images/camila@2x.jpg 2x"
+                alt="Camila"
                 width="264"
+                class="team-item-image"
               />
+
               <div class="team-item-overlay">
                 <h3 class="team-item-title">Camila Garcia</h3>
                 <p class="team-item-text">Marketing</p>
@@ -310,10 +404,11 @@
             </li>
             <li class="team-item">
               <img
-                class="team-item-image"
-                src="./images/team-4.jpg"
-                alt="Daniel Wilson"
+                src="images/dan@1x.jpg"
+                srcset="images/dan@1x.jpg 1x, images/dan@2x.jpg 2x"
+                alt="Daniel"
                 width="264"
+                class="team-item-image"
               />
               <div class="team-item-overlay">
                 <h3 class="team-item-title">Daniel Wilson</h3>
@@ -375,17 +470,21 @@
       </section>
 
       <section id="portfolio" class="section portfolio">
-        <div class="container">
+        <div class="container portfolio-container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
-                  class="portfolio-item-image"
-                  src="./images/portfolio-1.jpg"
+                  src="images/portfolio-1@1x.jpg"
+                  srcset="
+                    images/portfolio-1@1x.jpg 1x,
+                    images/portfolio-1@2x.jpg 2x
+                  "
                   alt="Banking App"
                   width="360"
                   height="300"
+                  class="portfolio-item-image"
                 />
                 <div class="portfolio-thumb-overlay">
                   <p class="portfolio-overlay-text">
@@ -403,11 +502,15 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
-                  class="portfolio-item-image"
-                  src="./images/portfolio-2.jpg"
+                  src="images/portfolio-2@1x.jpg"
+                  srcset="
+                    images/portfolio-2@1x.jpg 1x,
+                    images/portfolio-2@2x.jpg 2x
+                  "
                   alt="Cashless Payment"
                   width="360"
                   height="300"
+                  class="portfolio-item-image"
                 />
                 <div class="portfolio-thumb-overlay">
                   <p class="portfolio-overlay-text">
@@ -425,11 +528,15 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
-                  class="portfolio-item-image"
-                  src="./images/portfolio-3.jpg"
+                  src="images/portfolio-3@1x.jpg"
+                  srcset="
+                    images/portfolio-3@1x.jpg 1x,
+                    images/portfolio-3@2x.jpg 2x
+                  "
                   alt="Meditation App"
                   width="360"
                   height="300"
+                  class="portfolio-item-image"
                 />
                 <div class="portfolio-thumb-overlay">
                   <p class="portfolio-overlay-text">
@@ -447,11 +554,15 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
-                  class="portfolio-item-image"
-                  src="./images/portfolio-4.jpg"
+                  src="images/portfolio-4@1x.jpg"
+                  srcset="
+                    images/portfolio-4@1x.jpg 1x,
+                    images/portfolio-4@2x.jpg 2x
+                  "
                   alt="Taxi Service"
                   width="360"
                   height="300"
+                  class="portfolio-item-image"
                 />
                 <div class="portfolio-thumb-overlay">
                   <p class="portfolio-overlay-text">
@@ -469,11 +580,15 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
-                  class="portfolio-item-image"
-                  src="./images/portfolio-5.jpg"
+                  src="images/portfolio-5@1x.jpg"
+                  srcset="
+                    images/portfolio-5@1x.jpg 1x,
+                    images/portfolio-5@2x.jpg 2x
+                  "
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
+                  class="portfolio-item-image"
                 />
                 <div class="portfolio-thumb-overlay">
                   <p class="portfolio-overlay-text">
@@ -491,11 +606,15 @@
             <li class="portfolio-item">
               <div class="portfolio-thumb">
                 <img
-                  class="portfolio-item-image"
-                  src="./images/portfolio-6.jpg"
+                  src="images/portfolio-6@1x.jpg"
+                  srcset="
+                    images/portfolio-6@1x.jpg 1x,
+                    images/portfolio-6@2x.jpg 2x
+                  "
                   alt="Online Courses"
                   width="360"
                   height="300"
+                  class="portfolio-item-image"
                 />
                 <div class="portfolio-thumb-overlay">
                   <p class="portfolio-overlay-text">
@@ -602,9 +721,10 @@
         </div>
       </div>
     </footer>
-    <div id="modal" class="backdrop">
+
+    <div id="modal" class="backdrop" data-modal>
       <div class="modal">
-        <button class="modal-button" type="button">
+        <button class="modal-button" type="button" data-modal-close>
           <svg class="modal-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -693,5 +813,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
