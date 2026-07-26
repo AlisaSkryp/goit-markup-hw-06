@@ -94,7 +94,11 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
+
   .team-list {
     flex-wrap: nowrap;
     gap: 24px;
@@ -102,5 +106,6 @@
 
   .team-item {
     width: calc((100% - 72px) / 4);
+    max-width: none;
   }
 }

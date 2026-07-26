@@ -84,7 +84,8 @@
   border-radius: 4px;
   background-color: transparent;
   padding: 8px 16px;
-  width: 264px;
+  width: 100%;
+  max-width: 288px;
   height: 40px;
   font-weight: 400;
   font-size: 12px;
@@ -118,7 +119,7 @@
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
-  text-align: centers;
+  text-align: center;
 }
 
 .footer-subscribe-button {
@@ -168,7 +169,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .page-footer {
     padding: 100px 0;
   }

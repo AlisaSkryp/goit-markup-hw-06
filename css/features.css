@@ -25,6 +25,7 @@
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
 }
 
 .features-item-text {
@@ -40,6 +41,10 @@
     max-width: 768px;
   }
 
+  .features-item-title {
+    text-align: left;
+  }
+
   .features-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -52,9 +57,9 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .feature-container {
-    max-width: 1440px;
+    max-width: 1158px;
     padding: 0px 156px;
   }
 
